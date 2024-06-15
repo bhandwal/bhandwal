@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/2388b916f1.js" crossorigin="anonymous"></script>
+	<style>
+     @media screen and (max-width:900px) {
+     .main
+     {
+     
+        display:none 
+     }}
+     @media screen and (min-width:900px) and (max-width:1200px) {
+         .main{
+             display:none;
+         }
+     }
+     @media screen and (min-width:1200px) {}
+</style>
+	<style>
+	    .main{
+	        height:1400px;
+	        background:;
+	        
+	    }
+	    .back{
+	        height:1200px;
+	        width:100%;
+	        background-image:url("hero-bg.jpg");
+	        background-size:100% 100%;
+	        
+	    }
+	    .fan{
+	        width:25%;
+	    }
+	    .fan h2{
+	       font-family: cursive;
+	       font-size:55px;
+	       
+	    }
+	    .fane{
+	        width:50%;
+	    }
+	    .fane ul li{
+	       font-family: arial;
+	       list-style-type:none;
+	       display:inline-block;
+	       font-size:30px;
+	       margin-left:90px;
+	    }
+	    .fane ul li:hover{
+	        color: orange;
+	    }
+	    .fan1{
+	        width:25%;
+	        background-color:;
+	    }
+	    .fan1 i{
+	        font-size:30px;
+	        margin-left:40px;
+	        padding-top:40px;
+	    }
+	    .fan1 button{
+	        border-radius :30px;
+	    }
+	    .empty{
+	        width:100%;
+	       }
+	    .food{
+	        width:50%;
+	        }
+	     
+	     .food h1{
+	         font-family: cursive;
+	         font-size:75px;
+	         padding-top:200px;
+	     }
+	     .food button{
+	         border-radius :30px;
+	     }
+	     .empty1{
+	         height:100px;
+	         width:100%;
+	         float: left;
+	         background-color: white; 
+	     }
+	     .burger{
+	         height:450px;
+	         width:40%;
+	         float:left;
+	         background-color: black;
+	         margin:100px;
+	     }
+	      .burger1{
+	         height:450px;
+	         width:40%;
+	         float:left;
+	         background-color: black;
+	         margin:100px;
+	     }
+	 .burger img{
+	     border-radius:50%;
+	     border:10px solid orange;
+	     margin:40px;
+	 }
+	  .burger1 img{
+	     border-radius:50%;
+	     border:10px solid orange;
+	     margin:40px;
+	 }
+	.burger h6{
+	    color: white;
+	}
+.burger button{
+    padding:10px;
+    border-radius:9px;
+    float:right;
+    margin:-120px;
+    margin-right:220px;
+}
+.burger1 button{
+    padding:10px;
+    border-radius:9px;
+    float:right;
+    margin:-120px;
+    margin-right:220px;
+}
+.empty2{
+    height:80px;
+    width:100%;
+    float:left;
+    background-color: white;
+}
+.menu{
+    height:300px;
+    width:100%;
+    float:left;
+    text-align: center;
+    font-family: cursive;
+    font-size:60px;
+    font-weight:bold;
+}
+.pizza{
+    height:400px;
+    width:31.33%;
+    float:left;
+    background-color: ;
+    margin-left:30px;
+    border-bottom-left-radius:100px;
+    
+}
+.pizza img:hover {
+ transform:scale(2.0,0.0);
+ }
+ .pizza1 img:hover {
+ transform:scale(2.0,0.0);
+ }
+ .pizza2 img:hover {
+ transform:scale(2.0,0.0);
+ }
+.pizza1{
+    height:400px;
+    width:31.33%;
+    float:left;
+    background-color: red;
+    margin-left:30px;
+    border-bottom-left-radius:50px;
+}
+.pizza2{
+    height:400px;
+    width:31.33%;
+    float:left;
+    background-color: ;
+    margin-left:30px;
+    border-bottom-left-radius:50px;
+}
+
+.menu ul li{
+    list-style-list:none;
+    display:inline-block;
+    font-family: arial;
+    font-size:25px;
+    font-weight:normal;
+    margin-left:30px;
+}
+.pizza3{
+    height:350px;
+    width:31.33%;
+    float:left;
+    background-color: ;
+    margin-left:30px;
+    border-bottom-left-radius:50px;
+    border-bottom-right-radius:50px;
+}
+.pizza4{
+    height:350px;
+    width:31.33%;
+    float:left;
+    background-color: red;
+    margin-left:30px;
+    border-bottom-left-radius:50px;
+    border-bottom-right-radius:50px;
+}
+.pizza5{
+    height:350px;
+    width:31.33%;
+    float:left;
+    background-color: ;
+    margin-left:30px;
+    border-bottom-left-radius:50px;
+    border-bottom-right-radius:50px;
+    }
+    .pizza3 i{
+        float-right;
+        border-radius:50%;
+        background-color: orange;
+        height:50px;
+        width:7%;
+        padding:20px;
+        margin-left:650px;
+    }
+     .pizza4 i{
+        float-right;
+        border-radius:50%;
+        background-color: orange;
+        height:50px;
+        width:7%;
+        padding:20px;
+        margin-left:650px;
+    }
+     .pizza5 i{
+        float-right;
+        border-radius:50%;
+        background-color: orange;
+        height:50px;
+        width:7%;
+        padding:20px;
+        margin-left:650px;
+        margin-top:-20px;
+    }
+    .size{
+        margin-top:20px;
+    }
+    .abc{
+        text-align: center;
+        float:left;
+        margin-left:50%;
+        height:50px;
+        
+    }
+    .abc center button{
+        height:50px;
+        border-radius:40px;
+        width:200px;
+    }
+    .are{
+        height:800px;
+        width:50%;
+        
+    }
+      .are1{
+        height:800px;
+        width:50%;
+       }
+       .abc img{
+           margin:30px;
+       }
+       .are img{
+           
+           float:right;
+       }
+       .are1 button{
+           height:50px;
+           border-radius:40px;
+           width:200px;
+           color: white;
+       }
+       .table{
+           height:500px;
+           width:40%;
+           float:left
+       }
+       .table input{
+           height:50px;
+           width:80%;
+           font-size:30px;
+           text-align: left ;
+           margin:20px;
+           border:2px solid black;
+           border-radius:15px;
+           padding-left:30px;
+       }
+       .table select{
+           height:50px;
+           width:80%;
+           font-size:30px;
+           text-align: left ;
+           margin:20px;
+           border:2px solid black;
+           border-radius:15px;
+           padding-left:30px;
+       }
+       .table button{
+           height:50px;
+           border-radius:40px;
+           width:200px;
+           color: white;
+           margin:30px;
+       }
+       .map{
+           height:500px;
+           width:40%;
+       }
+       .opinion{
+           height:400px;
+	         width:45%;
+	         float:left;
+	         background-color: yellow;
+	         margin:200px;
+	         margin-left:50px;
+	         border-radius:15px;
+       }
+       .opinion{
+           height:400px;
+	         width:45%;
+	         float:left;
+	         background-color: black;
+	         margin:200px;
+	         margin-left:50px;
+	         border-radius:15px;
+       }
+       .opinion img{
+           border-radius:50%;
+           border:7px solid orange;
+           margin-left:200px;
+       }
+        .empty4{
+           height:500px;
+           width:100%;
+           float:left;
+           background-color: black;
+       }
+       .cyz{
+           height:300px;
+           width:30.33%;
+           float:left;
+           background-color: black;
+           margin-right:50px;
+       }
+       .contact{
+           height:300px;
+           width:29.33%;
+           float:left;
+           background-color: black;
+           margin-right:50px;
+       }
+       .us{
+           height:300px;
+           width:29.33%;
+           float:left;
+           background-color: black;
+       }
+      .cyz i{
+          font-size:35px;
+          font-color:white;
+          margin-left:200px;
+          
+      }
+      .contact ul li{
+          list-atyle-type:none;
+          display:inline-block;
+          font-size:30px;
+          background-color:white;
+          border-radius:50%;
+          height:50px;
+          width:7%;
+          padding:5px;
+          margin-top:30px;
+      }
+   
+      
+	</style>
+</head>
+<body>
+    <div class="main ">
+        <div class="back">
+            <div class="fan w-25 text-white p-5 float-left" >
+                <center><h2>Feane</h2></center></div>
+       <div class="fane w-50 text-white p-5 float-left" >         
+                <ul>
+        <li>HOME</li>
+        <li>MENU</li>
+        <li>ABOUT</li>
+        <li>BOOK TABLE</li>
+        <li>CONTACT</li>
+                </ul>
+                 </div>
+      <div class="fan1 w-25 text-white p-4 float-left" "> 
+      <i class="fa-solid fa-user"></i>
+      <i class="fa-solid fa-cart-shopping"></i>
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <button class="btn btn-outline-warning bg-warning text-white ml-5 w-25"><h>Order Online</h></button>
+      </div>
+      <div class="empty float-left"></div>
+      <div class="food   float-left text-white">
+   <center > <h1 >Fast Food Restaurant</h1>
+   <h4><p>Doloremque, kaque aperiam facilis rerum, commodi, temporibus sapiente ad<br>mollitia laborum quam quisquam esse error unde. Tempora ex doloremque. lobore install<br>
+sunt repellat dolore, iste magni quos nihil ducimus thero ipsam</p></h4><br>
+<button class="btn btn-outline-warning bg-warning text-white ml-5 w-25">Order Now</button>
+   </center>
+      </div>
+      </div>
+      <div class="empty1"></div>
+      <div class="burger">
+          <img src="o1.jpg" height="300" width="35%">
+      <h style="color: white; font-size:50px;font-family: cursive; float:right; margin-right:200px;margin-top:50px;">Tasty Thursdays <br>20% off  </h>
+      <button class="btn btn-outline-warning bg-warning text-white  w-25 "><h>Order Now<i class="fa-solid fa-cart-shopping"></i></h></button>
+      </div>
+      <div class="burger1">
+          <img src="o2.jpg" height="300" width="35%">
+    <h style="color: white; font-size:50px;font-family: cursive; float:right; margin-right:250px;margin-top:50px;">Pizza Days <br>15% off  </h>
+      <button class="btn btn-outline-warning bg-warning text-white  w-25 "><h>Order Now<i class="fa-solid fa-cart-shopping"></i></h></button>
+      </div>
+      <div class="empty2"></div>
+      <div class="menu">Our Menu
+      <ul>
+          <li class="bg-dark p-3 text-white " style="border-radius:20px;">All</li>
+          <li>Burger</li>
+          <li>Pizza</li>
+          <li>Pasta</li>
+          <li>Fries</li>
+      </ul>
+      </div>
+      
+      <div class="pizza bg-light">
+        <center > <img src="f1.png" height="350px"></center>
+      </div>
+       <div class="pizza1 bg-light">
+         <center > <img src="f2.png" height="300px"></center>
+       </div>
+        <div class="pizza2 bg-light">
+         <center ><img src="f3.png" height="350px"></center>
+        </div>
+        <div class="pizza3 bg-dark text-white p-5">
+            <h1>Delicious Pizza</h1>
+            <p>Vensam debitis quaerat officiis quasi supliditate que, quis<br>quam vell, magnam voluptateen repellenibut sed eaqueVensam <br>debitis quaerat officiis quasi supliditate que, quisquam</p>
+           <h3 class="size">$20</h3> <i  class="fa-solid fa-cart-shopping" ></i>
+        </div>
+        <div class="pizza4 bg-dark text-white p-5">
+            <h1>Delicious Burger</h1>
+            <p>Vensam debitis quaerat officiis quasi supliditate que, quisq<br>uam vell, magnam voluptateen repellenibut sed eaque Vensam <br>debitis quaerat officiis quasi supliditate que, quisquam</p>
+            <h3 class="size">$25</h3> <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        <div class="pizza5 bg-dark text-white p-5">
+           <h1>Delicious Pizza</h1>
+          <h>  <p>Vensam debitis quaerat officiis quasi supliditate que, quisq<br>uam vell, magnam voluptateen repellenibut sed eaque Vensam <br>debitis quaerat officiis quasi supliditate que, quisquam</p></h>
+          <h3 class="size">$15</h3> <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        <div class="empty2"></div>
+        <div class="pizza bg-light">
+        <center > <img src="f4.png" height="350px"></center>
+      </div>
+       <div class="pizza1 bg-light">
+         <center > <img src="f5.png" height="300px"></center>
+       </div>
+        <div class="pizza2 bg-light">
+         <center ><img src="f6.png" height="350px"></center>
+        </div>
+        <div class="pizza3 bg-dark text-white p-5">
+            <h1>Delicious Pasta</h1>
+            <p>Vensam debitis quaerat officiis quasi supliditate que, quis<br>quam vell, magnam voluptateen repellenibut sed eaqueVensam <br>debitis quaerat officiis quasi supliditate que, quisquam</p>
+           <h3 class="size">$10</h3> <i  class="fa-solid fa-cart-shopping" ></i>
+        </div>
+        <div class="pizza4 bg-dark text-white p-5">
+            <h1>Delicious Fries</h1>
+            <p>Vensam debitis quaerat officiis quasi supliditate que, quisq<br>uam vell, magnam voluptateen repellenibut sed eaque Vensam <br>debitis quaerat officiis quasi supliditate que, quisquam</p>
+            <h3 class="size">$17</h3> <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        <div class="pizza5 bg-dark text-white p-5">
+           <h1>Delicious Pizza</h1>
+          <h>  <p>Vensam debitis quaerat officiis quasi supliditate que, quisq<br>uam vell, magnam voluptateen repellenibut sed eaque Vensam <br>debitis quaerat officiis quasi supliditate que, quisquam</p></h>
+          <h3 class="size">$15</h3> <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        <div class="empty2"></div>
+             <div class="pizza bg-light">
+        <center > <img src="f7.png" height="350px"></center>
+      </div>
+       <div class="pizza1 bg-light">
+         <center > <img src="f8.png" height="300px"></center>
+       </div>
+        <div class="pizza2 bg-light">
+         <center ><img src="f9.png" height="350px"></center>
+        </div>
+        <div class="pizza3 bg-dark text-white p-5">
+            <h1>Testy Burger</h1>
+            <p>Vensam debitis quaerat officiis quasi supliditate que, quis<br>quam vell, magnam voluptateen repellenibut sed eaqueVensam <br>debitis quaerat officiis quasi supliditate que, quisquam</p>
+           <h3 class="size">$10</h3> <i  class="fa-solid fa-cart-shopping" ></i>
+        </div>
+        <div class="pizza4 bg-dark text-white p-5">
+            <h1>Testy Burger</h1>
+            <p>Vensam debitis quaerat officiis quasi supliditate que, quisq<br>uam vell, magnam voluptateen repellenibut sed eaque Vensam <br>debitis quaerat officiis quasi supliditate que, quisquam</p>
+            <h3 class="size">$17</h3> <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        <div class="pizza5 bg-dark text-white p-5">
+           <h1>Delicious Pasta</h1>
+          <h>  <p>Vensam debitis quaerat officiis quasi supliditate que, quisq<br>uam vell, magnam voluptateen repellenibut sed eaque Vensam <br>debitis quaerat officiis quasi supliditate que, quisquam</p></h>
+          <h3 class="size">$15</h3> <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        <div class="empty2"></div>
+        <div class="abc">
+       <center ><button class="btn btn-warning  text-center text-white" >View More</button></center>
+        </div>
+        <div class="empty2"></div>
+        
+        <div class="are w-50 bg-dark float-left p-5">
+     <center > <img src="o5.png" height="650px"></center>
+        </div>
+        <div class="are1 w-50 bg-dark float-left p-5 text-white">
+            <h1 style="font-family: cursive;font-size:50px;margin-top:250px;">We Are Feane</h1>
+            <h5><p>There are many variations of pemages of Lorem Ipsum able, but the <br>majority have suffered alteration in some form, by injected humour, or<br> randomised words which don't look even slightly believable. If you are <br>going to inn a pamage of Lorem Ipsum, you need to be sure there hunt <br>anything embarrassing hidden in the middle of text All.</p></h5>
+            <button class="btn badge-warning">
+                Read More 
+            </button>
+        </div>
+        <div class="empty2"></div>
+        <div class="table float-left m-5">
+            <h1 style="font-family: cursive;font-size:50px; margin-left:160px;">Book A Table</h1>
+         <input type="text"placeholder="Your Name">
+    <input type="text"placeholder="Phone Number ">
+   <input type="text"placeholder="Your Email">
+   <lable>
+    <select>
+        <option selected>How Many Persons?</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+    </select></lable>
+    <input type="date"placeholder="dd/mm/yyyy">
+    
+    <button class="btn btn-warning">BOOK NOW</button>
+        </div>
+        <div class="map float-left  m-5">
+     <h1>Google Map</h1>
+         <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=2880 Broadway, New York&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://embed-googlemap.com">embed google maps in website</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>
+         </div>
+       
+       
+       <div class="customer w-100 float-left">
+           <h1 style="font-family: cursive;font-size:50px; text-align: center;">What Says Our Customers</h1></div>
+           <div class="opinion m-5 bg-dark float-left text-white p-5">
+               <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam </h4>
+               <h1>Mike Hamell</h1>
+               <h3>magna allque</h3>
+               <img src="client1.jpg" height="170px" width="27%">
+           </div>
+                 <div class="opinion m-5 bg-dark float-left text-white p-5">
+               <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam </h4>
+                 <h1>Moana Michelle</h1>
+   <h3>magna allque</h3>
+               <h3>
+      <img src="client2.jpg" height="170px" width="27%"></h3
+            
+      <div class="empty6 float-left"></div>    
+<div class="empty4 float-left w-100 "><div>    
+  
+  <div class="srb w-100 float-left"></div>
+  
+  <div class="cyz text-white p-5 ">
+      <h1 style="font-family: cursive;font-size:60px; margin-left:150px;margin-bottom:60px;"> Contact Us</h1>
+      <h5 ><i class="fa-solid fa-location-dot"></i>Location</h5>
+     <h5> <i class="fa-solid fa-phone"></i> Call +91 7499414748</h5>
+     <h5><i class="fa-solid fa-envelope"></i> bhandwalkarsanika327@gmail.com</h5>
+  </div>
+  <div class="contact text-white p-5 text-center">
+      <h1 style="font-family: cursive;font-size:60px; margin-left:150px; text-align:center;margin-bottom:60px;"> Feane</h1>
+      <h5><p>There are many variations of pemages of Lorem Ipsum able, but the <br>majority have suffered alteration in some form, by injected humour, or<br> randomised words which don't look even slightly believable. If you are <br>going to inn a pamage of Lorem Ipsum, you need to be sure there hunt <br>anything embarrassing hidden in the middle of text All.</p></h5>
+      
+      <ul>
+     <li class="text-dark"><i class="fa-brands fa-instagram"></i></li>
+     <li class="text-dark"><i class="fa-brands fa-facebook"></i></li>
+     <li class="text-dark"><i class="fa-brands fa-twitter"></i></li>
+      <li class="text-dark"><i class="fa-brands fa-youtube"></i></li>
+     <li class="text-dark"><i class="fa-brands fa-whatsapp"></i></li>
+      </ul>
+      
+  </div>
+      <div class="us text-white p-5 text-center">
+          <h1 style="font-family: cursive;font-size:60px; margin-left:150px; text-align:center;margin-bottom:60px;">Opening Hours </h1>
+          <h5>Everyday</h5><br>
+          <h5>10:00Am - 10:00Pm</h5>
+             
+  
+      
+  </div>
+  
+    </div>
+    <div><h6>   <i class="fa-solid fa-arrow-up"></i> </h6>
+          </div></div>
+</body>
+</html>
